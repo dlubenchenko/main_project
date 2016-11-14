@@ -8,22 +8,24 @@ function f_acc(){
     $(this).next().slideToggle(2000);
 };
 
-// $(function() {
-//     $('#submit').click(function(e) {
-//         e.preventDefault();
-//         $.ajax({
-//             url: "https://formspree.io/d.lubenchenko@gmail.com",
-//             method: "POST",
-//             data: {
-//                 name: $('#name').val()
-//             },
-//             dataType: "json"
-//         })
-//         .done(function() {
-//             $('form').html('Thanck you!');
-//         })
-//         .fail(function() {
-//             $('form').html('Thanck you!');
-//         });
-//     });
-// });
+$(function() {
+    $('#submit').click(function(e) {
+        e.preventDefault();
+        $.ajax({
+            url: "https://formspree.io/d.lubenchenko@gmail.com",
+            method: "POST",
+            data: {
+                name: $('#name').val(),
+                email: $('#email').val(),
+                tel: $('#tel').val(),
+            },
+            dataType: "json"
+        })
+        .done(function() {
+            $('form').html('Thanck you!');
+        })
+        .fail(function() {
+            $('form').html('Thanck you!');
+        });
+    });
+});
