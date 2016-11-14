@@ -42,6 +42,11 @@ body {
     color: white;
 }
 
+.nav a:hover {
+    color: grey;
+    text-shadow: 1px 1px 2px black, 0 0 1em white;
+}
+
 .nav a:first-child {
     border-left: none;
 }
@@ -71,6 +76,13 @@ body {
 .specialization-2,
 .specialization-3 {
     padding: 9%;
+}
+
+.specialization-2-1,
+.specialization-2-2,
+.specialization-3-1,
+.specialization-3-2 {
+
 }
 
 .specialization-2-1 img,
