@@ -18,14 +18,33 @@ $(function() {
                 name: $('#name').val(),
                 email: $('#email').val(),
                 tel: $('#tel').val(),
+                age: $('#age').val(),
+                comment: $('#comment').val(),
+                male: $('#male').val(),
+                female: $('#female').val(),
+                other: $('#other').val(),
+                language: $('#language').val(),
+                location: $('#location').val()
             },
             dataType: "json"
         })
         .done(function() {
-            $('form').html('Thanck you!');
+            $('.register').html('Дякую, очікуйте зворотнього зв\'язку!');
+            $(document).ready(function(){
+              $('.register').css({
+                'margin-bottom': '20px',
+                'text-align': 'center',
+              });
+            });
         })
         .fail(function() {
-            $('form').html('Thanck you!');
+            $('.register').html('Щось не так!');
+            $(document).ready(function(){
+              $('.register').css({
+                'margin-bottom': '20px',
+                'text-align': 'center',
+              });
+            });
         });
     });
 });

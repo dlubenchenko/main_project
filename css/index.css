@@ -94,16 +94,6 @@ body {
     margin-bottom: 20px;
 }
 
-input:focus {
-    margin-left: 5px;
-    color: white;
-}
-
-input {
-    margin-left: 5px;
-    color: black;
-}
-
 .register-2 input[type=text],
 .register-2 input[type=email],
 .register-2 input[type=tel],
