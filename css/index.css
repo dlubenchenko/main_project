@@ -116,7 +116,7 @@ body {
 }
 
 .register-2 input[type=reset],
-.register-2 input[type=submit]{
+.register-2 input[type=submit] {
     width: 20%;
     height: 40px;
 }
@@ -125,20 +125,13 @@ body {
 .register-2 select[name=location] {
     min-width: 25%;
     max-width: 40%;
-    height: 40px;
+    height: 30px;
     text-align: center;
 }
 
 .specialization-2,
 .specialization-3 {
     padding: 9%;
-}
-
-.specialization-2-1,
-.specialization-2-2,
-.specialization-3-1,
-.specialization-3-2 {
-
 }
 
 .specialization-2-1 img,
@@ -152,15 +145,12 @@ body {
     border-bottom: 1px solid grey;
 }
 
-.projects > .flex-element {
+.projects > .flex-element:nth-child(odd) {
     margin: 0 10% 0 10%;
     cursor: pointer;
 }
 
-.projects-1-2,
-.projects-2-2,
-.projects-3-2,
-.projects-4-2 {
+.projects > .flex-element:nth-child(even) {
     display: none;
 }
 
