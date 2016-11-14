@@ -14,7 +14,7 @@ body {
 }
 
 .flex-element {
-    min-height: 100px;
+
 }
 
 .header-nav {
@@ -147,8 +147,22 @@ body {
     min-width: 200px;
 }
 
+.projects {
+    border-bottom: 1px solid grey;
+}
+
 .projects > .flex-element {
     margin: 0 10% 0 10%;
+}
+
+.footer {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-1 img {
+    width: 32px;
+    margin: 3px;
 }
 
 .map iframe {
