@@ -24,6 +24,11 @@
     align-items: center;
 }
 
+.register form {
+    display: flex;
+    flex-direction: column;
+}
+
 .about {
     display: flex;
     flex-wrap: wrap;
