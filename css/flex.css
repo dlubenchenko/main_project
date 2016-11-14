@@ -44,6 +44,11 @@
     flex-basis: 30%;
 }
 
+.register {
+    display: flex;
+    flex-direction: column;
+}
+
 .specialization {
     display: flex;
     flex-wrap: wrap;
