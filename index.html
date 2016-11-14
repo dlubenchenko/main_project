@@ -2,7 +2,7 @@
 <html lang="uk">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Кузик Григорій Костянтинович</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/flex.css">
@@ -83,34 +83,39 @@
                     <input id="age" type="text" name="age" placeholder="Ваш вік" pattern="[0-9]{3}" maxlength="3" required>
                 </label><br>
                 <textarea name="comment" id="comment" placeholder="Додаткова інформація"></textarea><br>
-                <label>
-                    <input id="male" name="gender" type="radio" value="male"> Чоловік
-                </label>
-                <label>
-                    <input id="female" name="gender" type="radio" value="female"> Жінка
-                </label>
-                <label>
-                    <input id="other" name="gender" type="radio" value="other"> Не вказано
-                </label><br>
-                <label>
-                    <select id="language" name="language">
-                        <option value="blank" selected>...</option> 
-                        <option value="ukrainian">Українська</option>
-                        <option value="english">Російська</option>
-                    </select>
-                    <i> Мова спілкування</i>
-                </label>
-                <label>
-                    <select id="location" name="location">
-                        <option value="blank" selected>...</option> 
-                        <option value="lviv">Львів</option>
-                        <option value="kyiv">Київ</option>
-                        <option value="odessa">Одесса</option>
-                    </select><i> Розташування</i>
-                </label>
+                <fieldset>
+                    <label>
+                        <input id="male" name="gender" type="radio" value="male"> Чоловік
+                    </label>
+                    <label>
+                        <input id="female" name="gender" type="radio" value="female"> Жінка
+                    </label>
+                    <label>
+                        <input id="other" name="gender" type="radio" value="other"> Не вказано
+                    </label>
+                    <br>
+                    <label>
+                        <select id="language" name="language">
+                            <option value="blank" selected>...</option> 
+                            <option value="ukrainian">Українська</option>
+                            <option value="english">Російська</option>
+                        </select>
+                        <i> Мова спілкування</i>
+                    </label>
+                    <label>
+                        <select id="location" name="location">
+                            <option value="blank" selected>...</option> 
+                            <option value="lviv">Львів</option>
+                            <option value="kyiv">Київ</option>
+                            <option value="odessa">Одесса</option>
+                        </select><i> Розташування</i>
+                    </label>
+                </fieldset>
                 <br>
-                    <input type="reset" name="reset" value="Обнулити">
+                <fieldset>
+                    <input type="reset" name="reset" value="Очистити">
                     <input type="submit" name="submit" value="Надіслати запит" formtarget="_blank"><br>
+                </fieldset>
 
             </form>
         </div>

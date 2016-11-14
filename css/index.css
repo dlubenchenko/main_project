@@ -15,7 +15,6 @@ body {
 
 .flex-element {
     min-height: 100px;
-    border: 1px solid black;
 }
 
 .header-nav {
@@ -86,6 +85,10 @@ body {
     width: 30%;
 }
 
+.register-2 {
+    width: 80%;
+}
+
 .register form {
     margin-bottom: 20px;
 }
@@ -95,11 +98,34 @@ body {
 .register-2 input[type=tel],
 .register-2 textarea[name=comment] {
     width: 100%;
+    min-width: 534px;
     margin: 20px;
     background-color: #000;
     height: 40px;
     border: none;
     border-bottom: 1px solid grey;
+}
+
+.register-2 fieldset {
+    width: 100%; 
+    min-width: 534px;
+    text-align: center; 
+    border: none;  
+    height: 40px;
+}
+
+.register-2 input[type=reset],
+.register-2 input[type=submit]{
+    width: 20%;
+    height: 40px;
+}
+
+.register-2 select[name=language],
+.register-2 select[name=location] {
+    min-width: 25%;
+    max-width: 40%;
+    height: 40px;
+    text-align: center;
 }
 
 .specialization-2,
