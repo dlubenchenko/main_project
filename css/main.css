@@ -1,3 +1,18 @@
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 1920px;
+    min-width: 480px;
+    background-color: #000;
+    letter-spacing: 1px;
+    font-size: 15pt;
+}
+
+p {
+    color: 
+}
+
 #menu {
     background-color: #000;
 }
@@ -56,9 +71,6 @@ header {
     width: 150px;
 }
 
-.bg-dark {
-    background: grey;
-}
 
 .footer.map iframe {
     min-width: 100%;

@@ -16,7 +16,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div id="menu" class="container-fluid default">
@@ -34,16 +33,16 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">Про мене</a>
+                        <a class="page-scroll" href="../project/index.html#about">Про мене</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Теми</a>
+                        <a class="page-scroll" href="../project/index.html#services">Теми</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Контакти</a>
+                        <a class="page-scroll" href="../project/index.html#contact">Контакти</a>
                     </li>
                     <li>
-                        <a  href="../project/projects.html">Проекти</a>
+                        <a class="page-scroll" href="../project/projects.html">Проекти</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="../project/contact.html">Звернутись</a>
@@ -64,105 +63,68 @@
         </div>
     </header>
 
-    <section class="about" id="about">
-        <div class="container">
-            <div class="row">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Напрямки діяльності:</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-                <div class="col-md-5 row-lg-offset-2 text-center">
-                    <h2 class="section-heading"></h2>
-
-                    <p class="text-faded">
-                        Практикуючий психолог<br>
-                        психотерапевт<br>
-                        гештальт-терапевт<br>
-                        бізнес-тренер<br>
-                    </p>
-                    <a href="#services" class="btn btn-default btn-xl">Детальніше</a>
-                </div>
-                <div class="col-md-6 row-lg-offset-2 text-center service-box">
-                    <img src="img/about_2.jpg" alt="about me">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-5 row-lg-offset-2 text-center service-box">
-                    <img src="img/about_1.jpg" alt="about me">
-                </div>
-                <div class="col-md-6 row-lg-offset-2 text-center">
-                    <p>
-                        Індивідуальні консультації<br>
-                        Групова терапія<br>
-                        Тренінги<br>
-                    </p>
-                    <a href="#services" class="btn btn-default btn-xl sr-button">Детальніше</a>
-                </div>
-            </div>
-        </div>
-    </section>
+      <form id="formx">
+                    <label>
+                        <input id="name" type="text" name="name" placeholder="Прізвище Ім'я По-Батькові" required>
+                    </label>
+                    <br>
+                    <label>
+                        <input id="email" type="email" name="email" placeholder="Електронна адреса" required>
+                    </label>
+                    <br>
+                    <label>
+                        <input id="tel" type="tel" name="tel" placeholder="Ваш телефон 380..." pattern="[0-9]{12}" maxlength="12" required>
+                    </label>
+                    <br>
+                    <label>
+                        <input id="age" type="text" name="age" placeholder="Ваш вік" pattern="[0-9]{2}" maxlength="3" required>
+                    </label>
+                    <br>
+                    <textarea name="comment" id="comment" placeholder="Додаткова інформація"></textarea>
+                    <br>
+                    <fieldset>
+                        <label>
+                            <input id="male" name="gender" type="radio" value="male">Чоловік
+                    
+                        
+                        </label>
+                        <label>
+                            <input id="female" name="gender" type="radio" value="female">Жінка
+                    
+                        
+                        </label>
+                        <label>
+                            <input id="other" name="gender" type="radio" value="other">Не вказано
+                    
+                        
+                        </label>
+                        <br>
+                        <label>
+                            <select id="language" name="language">
+                                <option value="blank" selected>...</option>
+                                <option value="ukrainian">Українська</option>
+                                <option value="english">Російська</option>
+                            </select>
+                            <i>Мова спілкування</i>
+                        </label>
+                        <label>
+                            <select id="location" name="location">
+                                <option value="blank" selected>...</option>
+                                <option value="lviv">Львів</option>
+                                <option value="kyiv">Київ</option>
+                                <option value="odessa">Одесса</option>
+                            </select>
+                            <i>Розташування</i>
+                        </label>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <input type="reset" name="reset" value="Очистити">
+                        <input id="submit" type="submit" name="submit" value="Надіслати запит">
+                        <br>
+                    </fieldset>
+                </form>
     
-
-    <section id="services" class="bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Теми:</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container themes">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <img class="fa-4x sr-icons" src="img/depresion.jpg">
-                        <p>
-                            Кризові стани<br>
-                            Психологічні травми<br>
-                            Стосунки з партнером<br>
-                            Сексуальність
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <img class="fa-4x sr-icons" src="img/sex.jpg">
-                        <p>
-                            Сексологія<br>
-                            Сексопаталогія<br>
-                            Сексуальні дисфункції<br>
-                            Депресії
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <img class="fa-4x sr-icons" src="img/kids.jpg">
-                        <p>
-                            Дитячо-батьківськи стосунки<br>
-                            Втрати<br>
-                            Невпевненість в собі<br>
-                            Фобії та страхи
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <img class="fa-4x sr-icons" src="img/phobias.jpg">
-                        <p>
-                            Нав'язливі думки<br>
-                            Апатія<br>
-                            Розлади харчової поведінки<br>
-                            Робота з підлітками<br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <aside class="bg-dark">
         <div class="container text-center">
@@ -217,7 +179,7 @@
 
     <!-- jQuery (потрібно для JavaScript плагінів Bootstrap) -->
     <script
-    src="https://code.jquery.com/jquery-3.1.1.js"
+    src="http://code.jquery.com/jquery-3.1.1.js"
     integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
     crossorigin="anonymous"></script>
     <!-- Підключення мінімізованої збірки всіх плагінів jQuery. Можна підключати додаткові плагіни, якщо потрібно -->
