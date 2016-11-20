@@ -33,7 +33,10 @@ $(function() {
    });
 });
 
-$( ".sr-icons" ).animate({
-    height: "200px",
-    width: "200px",
-}, "slow" );
+$(".sr-icons").hover(function(){
+    $(this).stop(true, false).animate({ height: "200px", width: "200px" });
+}, function() {
+    $(this).stop(true, false).animate({ height: "150px", width: "150px" });
+});
+
+
