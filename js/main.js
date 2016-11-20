@@ -1,5 +1,4 @@
-// scroll to anchors
-
+// scroll changes menu
 $(function() {
     var $menu = $("#menu"); 
     $(window).scroll(function() {
@@ -38,5 +37,3 @@ $(".sr-icons").hover(function(){
 }, function() {
     $(this).stop(true, false).animate({ height: "150px", width: "150px" });
 });
-
-

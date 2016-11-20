@@ -6,7 +6,7 @@ body {
     min-width: 480px;
     background-color: #000;
     letter-spacing: 1px;
-    font-size: 15pt;
+    font-size: 14pt;
 }
 
 p {
@@ -113,7 +113,15 @@ header {
     cursor: pointer;
 }
 
-.flex-element i,
-.flex-element span {
-    font-size: 10pt;
+#portfolio i,
+#portfolio span {
+    font-size: 9pt;
+}
+
+.projects-1-2 img,
+.projects-2-2 img,
+.projects-3-2 img,
+.projects-4-2 img {
+    width: 80%;
+    border-radius: 100%;
 }
