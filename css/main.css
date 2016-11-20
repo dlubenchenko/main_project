@@ -24,6 +24,7 @@ header {
     background-position: center;
     background-image: url(../img/header.jpg);
     color: #fff;
+    min-height: 600px;
 }
 
 .navbar {
